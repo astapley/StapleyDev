@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ffC-M0-f5d">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Portfolio-->
+        <scene sceneID="Qhm-FJ-2sd">
+            <objects>
+                <tableViewController id="uPU-6l-8Uw" customClass="Portfolio" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xBG-xb-PrU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="portfolioObjCells" id="9MK-ul-G6L">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9MK-ul-G6L" id="DIU-6U-Pud">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uPU-6l-8Uw" id="wj1-v2-MsT"/>
+                            <outlet property="delegate" destination="uPU-6l-8Uw" id="mu0-hi-ug8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Yjg-Ky-FIl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOT-v1-JpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="210"/>
+        </scene>
+        <!--Blur-->
+        <scene sceneID="sg8-wB-gWo">
+            <objects>
+                <viewController storyboardIdentifier="Blur Effects" id="Lcg-Jm-7KL" customClass="Blur" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Czz-tO-W1j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aui-2e-op7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="210"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="Asw-Jx-gyB">
+            <objects>
+                <viewController storyboardIdentifier="Container View Controller" id="AJo-fe-ooS" customClass="containerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ilb-Gc-hYV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" id="3gS-aW-oHD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="IVA-iw-zke" kind="embed" id="IWi-eY-K9i"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="3gS-aW-oHD" id="2jS-a0-xXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfn-ui-E3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="210"/>
+        </scene>
+        <!--Motion Effects-->
+        <scene sceneID="7Ud-8T-htB">
+            <objects>
+                <viewController storyboardIdentifier="Motion Effects" id="AnF-Wp-0Kx" customClass="motionEffects" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qhg-Uy-nTb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="despicable_me_2_minions-1920x1080.jpg" id="t7R-4o-aDL">
+                                <rect key="frame" x="-35" y="-40" width="390" height="648"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="t7R-4o-aDL" id="hx2-CX-rrn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glj-yI-19j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="891"/>
+        </scene>
+        <!--Transforms-->
+        <scene sceneID="MEe-QQ-DgV">
+            <objects>
+                <viewController storyboardIdentifier="Transforms" id="Aj7-Z9-aFw" customClass="Transforms" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sz3-kG-VwV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle.jpg" id="QjF-VL-jOl">
+                                <rect key="frame" x="110" y="392" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.png" id="cFk-Ld-2gr">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TG8-gG-aI5"/>
+                    <connections>
+                        <outlet property="imageViewCircle" destination="cFk-Ld-2gr" id="cBh-wG-K36"/>
+                        <outlet property="imageViewTurtle" destination="QjF-VL-jOl" id="op3-fG-z1Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHS-JC-ZPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="-467"/>
+        </scene>
+        <!--Dynamics-->
+        <scene sceneID="MGs-8s-aKj">
+            <objects>
+                <viewController storyboardIdentifier="Dynamics" id="DaN-W6-Tu2" customClass="Dynamics" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XJU-uG-rbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle.jpg" id="gy3-QG-W9U">
+                                <rect key="frame" x="135" y="143" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle.jpg" id="TQg-Bc-9cE">
+                                <rect key="frame" x="250" y="56" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle.jpg" id="Por-RF-vdp">
+                                <rect key="frame" x="20" y="80" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="turtleOne" destination="gy3-QG-W9U" id="k5S-O2-Odm"/>
+                        <outlet property="turtleThree" destination="Por-RF-vdp" id="A3C-Dg-fMA"/>
+                        <outlet property="turtleTwo" destination="TQg-Bc-9cE" id="qmz-f9-6Fd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cU-bb-vA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="-467"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="53d-e5-y4d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffC-M0-f5d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LQQ-9A-zgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uPU-6l-8Uw" kind="relationship" relationship="rootViewController" id="w6c-XL-Z6A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWD-3e-kBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="210"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6JY-lH-AUh">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="IVA-iw-zke" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qCU-Rd-n8t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.83137254900000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyb-Qg-rYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.png" width="989" height="989"/>
+        <image name="despicable_me_2_minions-1920x1080.jpg" width="960" height="540"/>
+        <image name="turtle.jpg" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
